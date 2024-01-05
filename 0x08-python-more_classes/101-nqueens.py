@@ -13,25 +13,14 @@ def init_board(n):
 
 
 def board_deepcopy(board):
-    """Creates a deepcopy of a chessboard.
-    Arg:
-        board: chessboard to make copy from.
-
-    Return: a deepcopy of a chessboard.
-    """
+    """Return a deepcopy of a chessboard."""
     if isinstance(board, list):
         return list(map(board_deepcopy, board))
     return (board)
 
 
 def get_solution(board):
-    """Creates the list of lists representation of a solved chessboard.
-
-    Arg:
-        board: list of cheswboard
-
-    Return: list of lists.
-    """
+    """Return the list of lists representation of a solved chessboard."""
     solution = []
     for r in range(len(board)):
         for c in range(len(board)):
