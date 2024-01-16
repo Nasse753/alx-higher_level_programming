@@ -101,7 +101,7 @@ class Base:
                 ret.append(cls.create(**d))
         return ret
 
-    @staticmethod
+@staticmethod
     def draw(list_rectangles, list_squares):
         import turtle
         import time
